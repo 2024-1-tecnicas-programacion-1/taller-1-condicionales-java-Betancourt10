@@ -20,6 +20,25 @@ public class TrianguloTest {
         assertEquals(valorEsperado, valorActual);
     }
     
-    // TODO: Agrega tus otros casos de prueba aquí
+    @Test
+    public void testEsUnTrianguloEquilatero() {
+        String valorEsperado = "Es un triángulo equilátero";
+        String valorActual = Triangulo.evaluar(3, 3, 3);
+        assertEquals(valorEsperado, valorActual);
+    } 
+    
+    @Test
+    public void testEsUnTrianguloIsosceles() {
+        String valorEsperado = "Es un triángulo isósceles";
+        String valorActual = Triangulo.evaluar(5, 8, 5);
+        assertEquals(valorEsperado, valorActual);
+    } 
+    
+    @Test
+    public void testEsUnTrianguloEscaleno() {
+        String valorEsperado = "Es un triángulo escaleno";
+        String valorActual = Triangulo.evaluar(8, 2, 7);
+        assertEquals(valorEsperado, valorActual);
+    }
     
 }
