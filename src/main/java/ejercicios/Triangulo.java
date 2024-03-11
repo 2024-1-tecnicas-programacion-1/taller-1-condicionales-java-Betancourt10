@@ -8,8 +8,23 @@ import java.util.Scanner;
  * @author danielsanchez
  */
 public class Triangulo {
-    public static String evaluar(double a, double b, double c) {
-        // TODO: Coloca aquí el código del ejercicio 7: Triángulos
+    public static String evaluar(double a, double b, double c) { 
+        if (a + b < c || a + c < b || b + c < a) 
+            {
+                return "No es un triángulo válido"; 
+            } 
+        else if (a == b && b == c) 
+            { 
+                return "El triángulo es equilátero"; 
+            } 
+        else if (a == b || b == c || a == c) 
+            { 
+                return "El triángulo es isósceles"; 
+            } 
+        else if (a != b && a != c && b != c) 
+            { 
+                return "El triángulo es escaleno";
+            }
         return "";
     }
     
