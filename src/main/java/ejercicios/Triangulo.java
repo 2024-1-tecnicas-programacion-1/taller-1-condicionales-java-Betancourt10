@@ -15,15 +15,15 @@ public class Triangulo {
             } 
         else if (a == b && b == c) 
             { 
-                return "El triángulo es equilátero"; 
+                return "Es un triángulo equilátero"; 
             } 
         else if (a == b || b == c || a == c) 
             { 
-                return "El triángulo es isósceles"; 
+                return "Es un triángulo isósceles"; 
             } 
         else if (a != b && a != c && b != c) 
             { 
-                return "El triángulo es escaleno";
+                return "Es un triángulo escaleno";
             }
         return "";
     }
