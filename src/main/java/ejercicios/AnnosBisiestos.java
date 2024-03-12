@@ -6,15 +6,19 @@ import java.util.Scanner;
  * @author danielsanchez
  */
 public class AnnosBisiestos {
-    public static String evaluar(int anio){
-        if (anio % 4 == 0)
+    public static String evaluar(int anio){ 
+        if (anio % 4 != 0)
             {
-                return anio + " Es bisiesto";
+                return anio + " No es bisiesto";
             } 
+        else if (anio % 100 != 0) 
+            { 
+                return anio + " Es bisiesto"; 
+            }
         else if (anio % 400 == 0) 
             { 
                 return anio + " Es bisiesto"; 
-            } 
+            }
         else 
             { 
                 return anio + " No es bisiesto"; 
