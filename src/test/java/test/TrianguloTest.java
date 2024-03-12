@@ -16,7 +16,7 @@ public class TrianguloTest {
     @Test
     public void testNoEsUnTrianguloValido() {
         String valorEsperado = "No es un triángulo válido";
-        String valorActual = Triangulo.evaluar(3.9, 6.0, 1.2);
+        String valorActual = Triangulo.evaluar(3, 6, 12);
         assertEquals(valorEsperado, valorActual);
     }
     
